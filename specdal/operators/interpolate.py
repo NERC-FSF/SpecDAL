@@ -9,7 +9,7 @@ def get_monotonic_series(series):
     TODO: test what happens if not strictly monotonic
         i.e. index: 1, 2, 3, 3
     """
-    if series.index.is_monotonic:
+    if series.index.is_monotonic_increasing:
         return [series]
     else:
         index = pd.Series(series.index)
